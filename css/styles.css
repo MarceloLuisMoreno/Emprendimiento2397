@@ -1,0 +1,757 @@
+
+.html {
+    white-space: nowrap;
+}
+
+.body {
+    overflow-x: hidden;
+    background: #14041E;
+}
+
+.body-grid {
+    display: grid;
+    width: 100%;
+    height: 1022px;
+    grid-template-areas: "gridNav gridMain";
+    grid-template-columns: 400px 1fr;  
+}
+
+.gridNav {
+    background: linear-gradient(180deg, #0B0610 43.75%, #4E327B 64.06%, #06010A 98.96%);
+}
+
+.gridMain {
+    background: #14041E;
+}
+
+/* nav-bar */
+.navbar {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 24px;
+    line-height: 33px;
+    position: absolute;
+    top: 280px
+}
+
+.navbar a {
+    list-style-type: none;
+    padding: 42px;
+    color: #ECD7FB;
+    display: block;
+    text-decoration: none;
+}
+
+.logo {
+    position: absolute; 
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 93px;
+    top: 68px;
+}
+
+/* Font navbar */
+
+.font-navbar-nosotros {
+    position: absolute;
+    width: 203px;
+    left: 60px;
+    top: 80px;
+}
+
+.redes {
+    position: absolute;
+    margin-top: 50px;
+    width: 290px;
+    height: 33px;
+    left: 50px;
+    background: #ECD7FB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+/* media */
+
+.media1 {
+position: absolute;
+width: 325px;
+height: 188px;
+left: calc(50% - 325px/2 - 139.5px);
+top: calc(50% - 188px/2 - 376px);
+filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+border-radius: 20px;
+}
+
+.media2 {
+    position: absolute;
+    width: 325px;
+    height: 320px;
+    left: calc(50% - 325px/2 + 199.5px);
+    top: calc(50% - 320px/2 - 310px);
+    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+    border-radius: 20px;
+}
+
+.media3 {
+    position: absolute;
+    width: 325px;
+    height: 188px;
+    left: calc(50% - 325px/2 + 538.5px);
+    top: calc(50% - 188px/2 - 376px);
+    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+    border-radius: 20px;
+}
+
+.media4 {
+    position: absolute;
+    width: 325px;
+    height: 332px;
+    left: calc(50% - 325px/2 - 142.5px);
+    top: calc(50% - 332px/2 - 92px);
+    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+    border-radius: 20px
+}
+
+.media5 {
+    position: absolute;
+    width: 325px;
+    height: 212px;
+    left: calc(50% - 325px/2 + 199.5px);
+    top: calc(50% - 212px/2 - 32px);
+    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+    border-radius: 20px;
+}
+
+.media6 {
+    position: absolute;
+    width: 325px;
+    height: 332px;
+    left: calc(50% - 325px/2 + 541.5px);
+    top: calc(50% - 332px/2 - 92px);
+    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+    border-radius: 20px;
+}
+
+.media7 {
+    position: absolute;
+    width: 325px;
+    height: 404px;
+    left: calc(50% - 325px/2 - 142.5px);
+    top: calc(50% - 404px/2 + 295px);
+    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+    border-radius: 20px;
+}
+
+.media8 {
+    position: absolute;
+    width: 325px;
+    height: 408px;
+    left: calc(50% - 325px/2 + 199.5px);
+    top: calc(50% - 408px/2 + 293px);
+    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+    border-radius: 20px;
+}
+
+.media9 {
+    position: absolute;
+    width: 325px;
+    height: 403px;
+    left: calc(50% - 325px/2 + 541.5px);
+    top: calc(50% - 403px/2 + 290.5px);
+    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+    border-radius: 20px;
+}
+
+.iconoInstagram {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 48px;
+    top: 4px;
+}
+
+.iconoFacebook {
+    position: absolute;
+    left: 35.52%;
+    right: 56.21%;
+    top: 12.12%;
+    bottom: 15.15%;
+}
+
+.iconoTikTok {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 158px;
+    top: 4px;
+}
+
+.iconoEmail {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 213px;
+    top: 4px;  
+}
+
+/* modal Nosotros */
+/******************/
+.textNosotros {
+    padding: 100px 140px 140px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+}
+
+.modalNosotrosDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    color: #FFFFFF;
+	background: rgba(248, 247, 247, 0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalNosotrosDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalNosotrosDialog > div {
+	width: 1229px;
+    height: 846px;
+	position: relative;
+	margin: 2% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+    background-image: url("../img/luna.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.close {
+	background: #9747FF;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 15px;
+	text-align: center;
+	top: 15px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { 
+    color: #9747FF;;
+    background: #14041E; }
+
+
+/* modal Productos */
+/******************/
+
+.textoProductos {
+    position: relative; 
+    top: -25px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+}
+
+.buzos {
+    display: inline-block;
+    position: absolute;
+    width: 1172px;
+    height: 50px;
+    left: 30px;
+    top: 60px;
+    background: #ECD7FB;
+    border-radius: 25px;
+}
+
+.logoProductos {
+    position: absolute; 
+    width: 150px;
+    height: 150px;
+    left: 500px;
+    top: -52px;
+}
+
+.textoTitulo {
+    position: absolute; 
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    padding-left: 26px;
+    top: -15px;
+}
+
+.modalProductosDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    color: #FFFFFF;
+	background: rgba(248, 247, 247, 0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalProductosDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalProductosDialog > div {
+	width: 1229px;
+    height: 846px;
+	position: relative;
+	margin: 2% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+    background-image: url("../img/luna.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.closeProductos {
+	background: #FFFFFF;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #14041E;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.closeProductos:hover { 
+    color: #9747FF;;
+    background: #14041E; }
+
+.sizeBuzo {
+    width:100%;
+}
+.cardsProductos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    gap: 2rem;
+    margin: 5px;
+    padding-top: 170px;
+}
+.cardProducto {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.cardProducto:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.containerCardProducto {
+    padding: 2px 16px;
+    text-align: center;
+}
+
+/* modal Producto Individual */
+/*****************************/
+
+.textoProducto {
+    position: absolute;
+    width: 446px;
+    height: 306px;
+    left: 660px;
+    top: 30px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+}
+
+.botonComprar {
+    position: absolute;
+    width: 100px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight:bold;
+	padding:15px;
+	border-radius:30px;
+	color:#f6f6f6;
+	background-color:#2B0F49;
+    list-style-type: none;
+    text-decoration: none;
+    top: 650px;
+    left: 850px;
+}
+
+.modalProducto1Dialog, .modalProducto2Dialog, .modalProducto3Dialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    color: #FFFFFF;
+	background: rgba(248, 247, 247, 0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalProducto1Dialog:target, .modalProducto2Dialog:target, .modalProducto3Dialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalProducto1Dialog > div {
+	width: 1229px;
+    height: 846px;
+	position: relative;
+	margin: 2% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+    background-image: url("../img/fondoBuzo.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.modalProducto2Dialog > div {
+	width: 1229px;
+    height: 846px;
+	position: relative;
+	margin: 2% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+    background-image: url("../img/fondoBuzo.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.modalProducto3Dialog > div {
+	width: 1229px;
+    height: 846px;
+	position: relative;
+	margin: 2% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+    background-image: url("../img/fondoBuzo.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.closeProducto {
+	background: #FFFFFF;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #14041E;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.closeProducto:hover { 
+    color: #9747FF;;
+    background: #14041E; }
+
+/* modal Contacto */
+/******************/
+
+.modalContactDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    color: #FFFFFF;
+	background: rgba(248, 247, 247, 0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalContactDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalContactDialog > div {
+	width: 1229px;
+    height: 846px;
+	position: relative;
+	margin: 2% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+    background-image: url("../img/luna.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+
+/* Contacto */
+.contacto {
+    margin-top: 80px;
+}
+form{
+	width:600px;
+	padding:16px;
+	border-radius:30px;
+	margin:auto;
+}
+
+form label{
+	width: 172px;
+	font-weight:bold;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 23px;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:100%;
+	padding:10px;
+	border:1px solid #f6f6f6;
+	border-radius:30px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    font-weight:bold;
+	padding:20px;
+	margin-top: 50px;
+	border-radius:30px;
+	display:block;
+	color:#000;
+	background-color:#f6f6f6;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+    padding:10px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:30px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+
+/* modal Gracias */
+/******************/
+
+.modalGraciasDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    color: #FFFFFF;
+	background: rgba(248, 247, 247, 0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalGraciasDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalGraciasDialog > div {
+	width: 1229px;
+    height: 846px;
+	position: relative;
+	margin: 2% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+    background-image: url("../img/luna.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.closeGracias {
+	background: #FFFFFF;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #14041E;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.closeGracias:hover { 
+    color: #9747FF;;
+    background: #14041E; }
+
+
+/* Página 404   */
+
+.fondoError404 {
+    overflow-x: hidden;
+    background: #14041E;
+    color: #FFFFFF;
+}
+
+.logo404 {
+    position: absolute; 
+    width: 150px;
+    height: 150px;
+    left: 50px;
+    top: 50px;
+}
+
+.error404 {
+    padding-top: 10%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.boton404 {
+    width: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight:bold;
+	padding:15px;
+	border-radius:30px;
+	color:#000;
+	background-color:#f6f6f6;
+    list-style-type: none;
+    text-decoration: none;
+} 
+
+.boton404:hover{
+	cursor:pointer;
+}
+
+.textoContacto {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 15px;
+    line-height: 25px;  
+}
+
+
