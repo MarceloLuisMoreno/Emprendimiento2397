@@ -74,6 +74,22 @@
     border-radius: 20px;
 }
 
+.whatsapp {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 35px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 43px;
+    z-index: 100;
+    bottom: 8%;
+    right: 8%;
+    z-index: 999999;
+}
+
 /* media */
 
 .media1 {
