@@ -296,8 +296,8 @@ border-radius: 20px;
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 30px;
+    line-height: 36px;
     text-align: center;
 }
 
@@ -421,15 +421,15 @@ border-radius: 20px;
 
 .textoProducto {
     position: absolute;
-    width: 446px;
+    width: 500px;
     height: 306px;
-    left: 660px;
+    left: 680px;
     top: 30px;
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 30px;
+    line-height: 36px;
     color: #000000;
 }
 
@@ -478,7 +478,7 @@ border-radius: 20px;
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
 	background: -o-linear-gradient(#fff, #999);
-    background-image: url("../img/fondoBuzo.png"); 
+    background-image: url("../img/fondoBuzo1.png"); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -497,7 +497,7 @@ border-radius: 20px;
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
 	background: -o-linear-gradient(#fff, #999);
-    background-image: url("../img/fondoBuzo.png"); 
+    background-image: url("../img/fondoBuzo2.png"); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -516,7 +516,7 @@ border-radius: 20px;
 	background: -moz-linear-gradient(#fff, #999);
 	background: -webkit-linear-gradient(#fff, #999);
 	background: -o-linear-gradient(#fff, #999);
-    background-image: url("../img/fondoBuzo.png"); 
+    background-image: url("../img/fondoBuzo3.png"); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -550,6 +550,15 @@ border-radius: 20px;
 
 /* modal Contacto */
 /******************/
+
+.textoContactanos {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+}
 
 .modalContactDialog {
 	position: fixed;
