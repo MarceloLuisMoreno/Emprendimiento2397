@@ -25,7 +25,7 @@
 }
 
 /* nav-bar */
-.navbar {
+.nav-bar {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400px;
@@ -35,7 +35,7 @@
     top: 280px
 }
 
-.navbar a {
+.nav-bar a {
     list-style-type: none;
     padding: 42px;
     color: #ECD7FB;
@@ -76,14 +76,14 @@
 
 .whatsapp {
     position: fixed;
-    width: 45px;
-    height: 45px;
-    bottom: 35px;
+    width: 5vh;
+    height: 5vh;
+    bottom: 5vh;
     background-color: #25d366;
     color: #fff;
     border-radius: 50px;
     text-align: center;
-    font-size: 43px;
+    font-size: 3.5vh;
     z-index: 100;
     bottom: 8%;
     right: 8%;
@@ -216,181 +216,55 @@ border-radius: 20px;
 
 /* modal Nosotros */
 /******************/
-.textNosotros {
-    padding: 100px 140px 140px;
+.textoNosotros {
+    padding: 3vh;
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 49px;
     text-align: center;
+    color: #FFFFFF ;
 }
-
-.modalNosotrosDialog {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-    color: #FFFFFF;
-	background: rgba(248, 247, 247, 0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalNosotrosDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalNosotrosDialog > div {
-	width: 1229px;
-    height: 846px;
-	position: relative;
-	margin: 2% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-    background-image: url("../img/luna.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-}
-
-.close {
-	background: #9747FF;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: 15px;
-	text-align: center;
-	top: 15px;
-	width: 24px;
-	text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
-}
-.close:hover { 
-    color: #9747FF;;
-    background: #14041E; }
-
 
 /* modal Productos */
 /******************/
 
 .textoProductos {
-    position: relative; 
-    top: -25px;
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .buzos {
     display: inline-block;
-    position: absolute;
-    width: 1172px;
+    width: 100%;
     height: 50px;
-    left: 30px;
-    top: 60px;
     background: #ECD7FB;
     border-radius: 25px;
 }
 
 .logoProductos {
-    position: absolute; 
-    width: 150px;
-    height: 150px;
-    left: 500px;
-    top: -52px;
+    position: relative; 
+    width: 20%;
+    top: -12vh;
 }
 
 .textoTitulo {
-    position: absolute; 
+    display: flex;
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    color: #000000;
+    color: #000;
     padding-left: 26px;
     top: -15px;
+    justify-content: space-between;
 }
-
-.modalProductosDialog {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-    color: #FFFFFF;
-	background: rgba(248, 247, 247, 0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalProductosDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalProductosDialog > div {
-	width: 1229px;
-    height: 846px;
-	position: relative;
-	margin: 2% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-    background-image: url("../img/luna.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-}
-
-.closeProductos {
-	background: #FFFFFF;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #14041E;
-    padding: 10px 30px 10px 30px;
-    text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
-}
-.closeProductos:hover { 
-    color: #9747FF;;
-    background: #14041E; }
 
 .sizeBuzo {
     width:100%;
@@ -399,8 +273,7 @@ border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
     gap: 2rem;
-    margin: 5px;
-    padding-top: 170px;
+    margin:auto;
 }
 .cardProducto {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -412,17 +285,20 @@ border-radius: 20px;
 }
 
 .containerCardProducto {
-    padding: 2px 16px;
     text-align: center;
+}
+
+.cardFotoProducto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+    gap: 1rem;
+    justify-content: space-between;
 }
 
 /* modal Producto Individual */
 /*****************************/
 
 .textoProducto {
-    position: absolute;
-    width: 500px;
-    height: 306px;
     left: 680px;
     top: 30px;
     font-family: 'DM Serif Display';
@@ -433,8 +309,12 @@ border-radius: 20px;
     color: #000000;
 }
 
+.imgBuzo {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
 .botonComprar {
-    position: absolute;
     width: 100px;
     font-size: 20px;
     line-height: 24px;
@@ -445,108 +325,9 @@ border-radius: 20px;
 	background-color:#2B0F49;
     list-style-type: none;
     text-decoration: none;
-    top: 650px;
-    left: 850px;
 }
 
-.modalProducto1Dialog, .modalProducto2Dialog, .modalProducto3Dialog {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-    color: #FFFFFF;
-	background: rgba(248, 247, 247, 0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalProducto1Dialog:target, .modalProducto2Dialog:target, .modalProducto3Dialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalProducto1Dialog > div {
-	width: 1229px;
-    height: 846px;
-	position: relative;
-	margin: 2% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-    background-image: url("../img/fondoBuzo1.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-}
 
-.modalProducto2Dialog > div {
-	width: 1229px;
-    height: 846px;
-	position: relative;
-	margin: 2% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-    background-image: url("../img/fondoBuzo2.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-}
-
-.modalProducto3Dialog > div {
-	width: 1229px;
-    height: 846px;
-	position: relative;
-	margin: 2% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-    background-image: url("../img/fondoBuzo3.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-}
-
-.closeProducto {
-	background: #FFFFFF;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #14041E;
-    padding: 10px 30px 10px 30px;
-    text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
-}
-.closeProducto:hover { 
-    color: #9747FF;;
-    background: #14041E; }
 
 /* modal Contacto */
 /******************/
@@ -560,58 +341,32 @@ border-radius: 20px;
     color: #FFFFFF;
 }
 
-.modalContactDialog {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-    color: #FFFFFF;
-	background: rgba(248, 247, 247, 0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalContactDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalContactDialog > div {
-	width: 1229px;
-    height: 846px;
-	position: relative;
-	margin: 2% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-    background-image: url("../img/luna.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-}
-
 
 /* Contacto */
-.contacto {
-    margin-top: 80px;
+
+.fondoLuna {
+    background-image: url("../img/luna.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.buttonClose {
+    background: #9747FF;
+	color: #FFFFFF;
+}
+.contacto {
+    margin-top: 1vh;
+}
+
 form{
-	width:600px;
-	padding:16px;
-	border-radius:30px;
-	margin:auto;
+	width: 70%;
+    margin: 20vh auto 20vh auto;
+    color: #FFFFFF;
+
 }
 
 form label{
-	width: 172px;
+	width: 150vh;
 	font-weight:bold;
     font-family: 'DM Serif Display';
     font-style: normal;
@@ -624,29 +379,30 @@ form label{
 form input[type="text"],
 form input[type="email"]{
 	width:100%;
-	padding:10px;
+	padding: 1vh;
 	border:1px solid #f6f6f6;
 	border-radius:30px;
 	background-color:#f6f6f6;
-	margin:8px 0;
+	margin:6px 0;
 	display:inline-block;
 }
 
 form input[type="submit"]{
-    font-size: 20px;
+    font-size: 3vh;
     line-height: 24px;
     text-align: center;
     font-weight:bold;
-	padding:20px;
-	margin-top: 50px;
+	padding: 1vh 4vh;
+	margin-top: 3vh;
 	border-radius:30px;
-	display:block;
-	color:#000;
 	background-color:#f6f6f6;
 } 
 
 form input[type="submit"]:hover{
 	cursor:pointer;
+    background-color:#9747FF;
+    text-justify: center !important;
+
 }
 
 textarea{
@@ -665,43 +421,16 @@ textarea{
 /* modal Gracias */
 /******************/
 
-.modalGraciasDialog {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-    color: #FFFFFF;
-	background: rgba(248, 247, 247, 0.8);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
-}
-.modalGraciasDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
-.modalGraciasDialog > div {
-	width: 1229px;
-    height: 846px;
-	position: relative;
-	margin: 2% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-    background-image: url("../img/luna.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-}
+.textoGracias {
+    padding: 3vh;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #FFFFFF ;
+}  
 
 .closeGracias {
 	background: #FFFFFF;
@@ -725,6 +454,7 @@ textarea{
 .closeGracias:hover { 
     color: #9747FF;;
     background: #14041E; }
+
 
 
 /* Página 404   */
@@ -779,4 +509,14 @@ textarea{
     line-height: 25px;  
 }
 
+#modalNosotros,
+#modalProductos,
+#modalContact,
+#modalGracias {
+    background-color:  rgba(236, 215, 251, 0.53) !important;
+}
+
+.hiddenGracias {
+    display: none;
+}
 
