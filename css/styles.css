@@ -22,6 +22,12 @@
 
 .gridMain {
     background: #14041E;
+    display: grid;
+    grid-template-areas:
+      "a b c"
+      "d b f"
+      "d e f"
+      "g h i";
 }
 
 /* nav-bar */
@@ -92,95 +98,66 @@
 
 /* media */
 
-.media1 {
-position: absolute;
-width: 325px;
-height: 188px;
-left: calc(50% - 325px/2 - 139.5px);
-top: calc(50% - 188px/2 - 376px);
-filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
-border-radius: 20px;
-}
-
-.media2 {
-    position: absolute;
-    width: 325px;
-    height: 320px;
-    left: calc(50% - 325px/2 + 199.5px);
-    top: calc(50% - 320px/2 - 310px);
+.gridMain div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .media1 {
     filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
     border-radius: 20px;
-}
-
-.media3 {
-    position: absolute;
-    width: 325px;
-    height: 188px;
-    left: calc(50% - 325px/2 + 538.5px);
-    top: calc(50% - 188px/2 - 376px);
+    grid-area: a;
+  }
+  
+  .media2 {
     filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
     border-radius: 20px;
-}
-
-.media4 {
-    position: absolute;
-    width: 325px;
-    height: 332px;
-    left: calc(50% - 325px/2 - 142.5px);
-    top: calc(50% - 332px/2 - 92px);
-    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
-    border-radius: 20px
-}
-
-.media5 {
-    position: absolute;
-    width: 325px;
-    height: 212px;
-    left: calc(50% - 325px/2 + 199.5px);
-    top: calc(50% - 212px/2 - 32px);
+    grid-area: b;
+  }
+  
+  .media3 {
     filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
     border-radius: 20px;
-}
-
-.media6 {
-    position: absolute;
-    width: 325px;
-    height: 332px;
-    left: calc(50% - 325px/2 + 541.5px);
-    top: calc(50% - 332px/2 - 92px);
+    grid-area: c;
+  }
+  
+  .media4 {
     filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
     border-radius: 20px;
-}
-
-.media7 {
-    position: absolute;
-    width: 325px;
-    height: 404px;
-    left: calc(50% - 325px/2 - 142.5px);
-    top: calc(50% - 404px/2 + 295px);
+    grid-area: d;
+  }
+  
+  .media5 {
     filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
     border-radius: 20px;
-}
-
-.media8 {
-    position: absolute;
-    width: 325px;
-    height: 408px;
-    left: calc(50% - 325px/2 + 199.5px);
-    top: calc(50% - 408px/2 + 293px);
+    grid-area: e;
+  }
+  
+  .media6 {
     filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
     border-radius: 20px;
-}
-
-.media9 {
-    position: absolute;
-    width: 325px;
-    height: 403px;
-    left: calc(50% - 325px/2 + 541.5px);
-    top: calc(50% - 403px/2 + 290.5px);
+    grid-area: f;
+  }
+  
+  .media7 {
     filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
     border-radius: 20px;
-}
+    grid-area: g;
+  }
+  
+  .media8 {
+    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+    border-radius: 20px;
+    grid-area: h;
+  }
+  
+  .media9 {
+    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+    border-radius: 20px;
+    grid-area: i;
+  }
 
 .iconoInstagram {
     position: absolute;
