@@ -11,7 +11,6 @@
 .body-grid {
     display: grid;
     width: 100%;
-    height: 1022px;
     grid-template-areas: "gridNav gridMain";
     grid-template-columns: 400px 1fr;  
 }
@@ -28,6 +27,15 @@
       "d b f"
       "d e f"
       "g h i";
+}
+/*nav-bar mobile*/
+.menuMobile {
+    cursor: pointer;
+    display: none;
+}
+
+.menuImg {
+    width: 25vw;
 }
 
 /* nav-bar */
@@ -502,3 +510,25 @@ textarea{
     display: none;
 }
 
+@media screen and (max-width: 900px){
+    .menuMobile {
+        display: flex;
+    }
+
+    .gridNav {
+        background: linear-gradient(180deg, #0B0610 43.75%, #4E327B 64.06%, #06010A 98.96%);
+        transform: translate(-500px);
+    }
+
+    .menu-show {
+        transform: translate(0px);
+    }
+
+    .gridNav{
+        position: absolute;
+        max-width: 500px;
+        width: 385px;
+        height: 120vh;
+        z-index: 1;
+    }
+}
