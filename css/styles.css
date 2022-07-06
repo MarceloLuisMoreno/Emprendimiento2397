@@ -31,6 +31,10 @@
 }
 
 /* nav-bar */
+.gridNav a:hover {
+    color: #837b8b;
+}
+
 .nav-bar {
     font-family: 'DM Serif Display';
     font-style: normal;
@@ -82,19 +86,20 @@
 
 .whatsapp {
     position: fixed;
-    width: 5vh;
-    height: 5vh;
+    width: 10vh;
+    height: 10vh;
     bottom: 5vh;
     background-color: #25d366;
     color: #fff;
     border-radius: 50px;
     text-align: center;
-    font-size: 3.5vh;
+    font-size: 6.8vh;
     z-index: 100;
-    bottom: 8%;
-    right: 8%;
+    bottom: 4%;
+    right: 3.5%;
     z-index: 999999;
 }
+
 
 /* media */
 
