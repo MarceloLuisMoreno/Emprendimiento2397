@@ -302,11 +302,13 @@
 }
 
 .botonComprar {
-  width: 100px;
+  width: 200px;
   font-size: 20px;
   line-height: 24px;
   font-weight: bold;
   padding: 15px;
+  padding-left: 5vh;
+  padding-right: 5vh;
   border-radius: 30px;
   color: #f6f6f6;
   background-color: #2b0f49;
@@ -493,7 +495,10 @@ textarea {
 #modalNosotros,
 #modalProductos,
 #modalContact,
-#modalGracias {
+#modalGracias,
+#modalProducto1,
+#modalProducto2,
+#modalProducto3 {
   background-color: rgba(236, 215, 251, 0.53) !important;
 }
 
