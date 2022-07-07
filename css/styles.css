@@ -1,534 +1,635 @@
-
 .html {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .body {
-    overflow-x: hidden;
-    background: #14041E;
+  overflow-x: hidden;
+  background: #14041e;
 }
 
 .body-grid {
-    display: grid;
-    width: 100%;
-    grid-template-areas: "gridNav gridMain";
-    grid-template-columns: 400px 1fr;  
+  display: grid;
+  width: 100%;
+  grid-template-areas: "gridNav" "gridMain";
 }
 
 .gridNav {
-    background: linear-gradient(180deg, #0B0610 43.75%, #4E327B 64.06%, #06010A 98.96%);
+  background: linear-gradient(
+    180deg,
+    #0b0610 43.75%,
+    #4e327b 64.06%,
+    #06010a 98.96%
+  );
 }
 
 .gridMain {
-    background: #14041E;
+  background: #14041e;
+  
     display: grid;
-    grid-template-areas:
-      "a b c"
-      "d b f"
-      "d e f"
-      "g h i";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  
 }
 /*nav-bar mobile*/
 .menuMobile {
-    cursor: pointer;
-    display: none;
+  cursor: pointer;
+  display: none;
+  width: 100vw;
 }
 
 .menuImg {
-    width: 25vw;
+  width: 25vw;
 }
 
 /* nav-bar */
 .gridNav a:hover {
-    color: #837b8b;
+  color: #837b8b;
 }
 
 .nav-bar {
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 24px;
-    line-height: 33px;
-    position: absolute;
-    top: 280px
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 33px;
+  position: absolute;
+  top: 280px;
 }
 
 .nav-bar a {
-    list-style-type: none;
-    padding: 42px;
-    color: #ECD7FB;
-    display: block;
-    text-decoration: none;
+  list-style-type: none;
+  padding: 42px;
+  color: #ecd7fb;
+  display: block;
+  text-decoration: none;
 }
 
 .logo {
-    position: absolute; 
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    left: 93px;
-    top: 68px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  left: 93px;
+  top: 68px;
 }
 
 /* Font navbar */
 
 .font-navbar-nosotros {
-    position: absolute;
-    width: 203px;
-    left: 60px;
-    top: 80px;
+  position: absolute;
+  width: 203px;
+  left: 60px;
+  top: 80px;
 }
 
 .redes {
-    position: absolute;
-    margin-top: 50px;
-    width: 290px;
-    height: 33px;
-    left: 50px;
-    background: #ECD7FB;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+  display: flex;
+  left: 50px;
+  position: absolute;
+  width: 290px;
+  height: 33px;
+  background: #ecd7fb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
 }
 
 .whatsapp {
-    position: fixed;
-    width: 10vh;
-    height: 10vh;
-    bottom: 5vh;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 6.8vh;
-    z-index: 100;
-    bottom: 4%;
-    right: 3.5%;
-    z-index: 999999;
+  position: fixed;
+  width: 10vh;
+  height: 10vh;
+  bottom: 5vh;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 6.8vh;
+  z-index: 100;
+  bottom: 4%;
+  right: 3.5%;
+  z-index: 999999;
 }
-
 
 /* media */
 
 .gridMain div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .media1 {
-    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
-    border-radius: 20px;
-    grid-area: a;
-  }
-  
-  .media2 {
-    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
-    border-radius: 20px;
-    grid-area: b;
-  }
-  
-  .media3 {
-    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
-    border-radius: 20px;
-    grid-area: c;
-  }
-  
-  .media4 {
-    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
-    border-radius: 20px;
-    grid-area: d;
-  }
-  
-  .media5 {
-    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
-    border-radius: 20px;
-    grid-area: e;
-  }
-  
-  .media6 {
-    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
-    border-radius: 20px;
-    grid-area: f;
-  }
-  
-  .media7 {
-    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
-    border-radius: 20px;
-    grid-area: g;
-  }
-  
-  .media8 {
-    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
-    border-radius: 20px;
-    grid-area: h;
-  }
-  
-  .media9 {
-    filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
-    border-radius: 20px;
-    grid-area: i;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.media1 {
+  filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+  border-radius: 20px;
+}
+
+.media2 {
+  filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+  border-radius: 20px;
+}
+
+.media3 {
+  filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+  border-radius: 20px;
+}
+
+.media4 {
+  filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+  border-radius: 20px;
+}
+
+.media5 {
+  filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+  border-radius: 20px;
+}
+
+.media6 {
+  filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+}
+
+.media7 {
+  filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+  border-radius: 20px;
+}
+
+.media8 {
+  filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+  border-radius: 20px;
+}
+
+.media9 {
+  filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+  border-radius: 20px;
+}
 
 .iconoInstagram {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 48px;
-    top: 4px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 48px;
+  top: 4px;
 }
 
 .iconoFacebook {
-    position: absolute;
-    left: 35.52%;
-    right: 56.21%;
-    top: 12.12%;
-    bottom: 15.15%;
+  position: absolute;
+  left: 35.52%;
+  right: 56.21%;
+  top: 12.12%;
+  bottom: 15.15%;
 }
 
 .iconoTikTok {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 158px;
-    top: 4px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 158px;
+  top: 4px;
 }
 
 .iconoEmail {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 213px;
-    top: 4px;  
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 213px;
+  top: 4px;
 }
 
 /* modal Nosotros */
 /******************/
 .textoNosotros {
-    padding: 3vh;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
-    text-align: center;
-    color: #FFFFFF ;
+  padding: 3vh;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #ffffff;
 }
 
 /* modal Productos */
 /******************/
 
 .textoProductos {
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    margin-top: 10px;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .buzos {
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-    background: #ECD7FB;
-    border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background: #ecd7fb;
+  border-radius: 25px;
+  margin-bottom: 5rem;
 }
 
 .logoProductos {
-    position: relative; 
-    width: 20%;
-    top: -12vh;
+  position: relative;
+  width: 6vw;
+  top: -3vh;
+  left: 4vw;
+  display: none;
 }
 
 .textoTitulo {
-    display: flex;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    color: #000;
-    padding-left: 26px;
-    top: -15px;
-    justify-content: space-between;
+  display: flex;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000;
+  padding-left: 26px;
+  top: -15px;
+  justify-content: space-between;
 }
 
 .sizeBuzo {
-    width:100%;
+  width: 100%;
 }
 .cardsProductos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-    gap: 2rem;
-    margin:auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+  gap: 2rem;
+  margin: auto;
 }
 .cardProducto {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 
 .cardProducto:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .containerCardProducto {
-    text-align: center;
+  text-align: center;
 }
 
 .cardFotoProducto {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
-    gap: 1rem;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+  gap: 1rem;
+  justify-content: space-between;
 }
 
 /* modal Producto Individual */
 /*****************************/
 
 .textoProducto {
-    left: 680px;
-    top: 30px;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    color: #000000;
+  left: 680px;
+  top: 30px;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
 }
 
 .imgBuzo {
-    padding: 0 !important;
-    margin: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .botonComprar {
-    width: 100px;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight:bold;
-	padding:15px;
-	border-radius:30px;
-	color:#f6f6f6;
-	background-color:#2B0F49;
-    list-style-type: none;
-    text-decoration: none;
+  width: 100px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 30px;
+  color: #f6f6f6;
+  background-color: #2b0f49;
+  list-style-type: none;
+  text-decoration: none;
 }
-
-
 
 /* modal Contacto */
 /******************/
 
 .textoContactanos {
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
-    color: #FFFFFF;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  color: #ffffff;
 }
-
 
 /* Contacto */
 
 .fondoLuna {
-    background-image: url("../img/luna.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../img/luna.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .buttonClose {
-    background: #9747FF;
-	color: #FFFFFF;
+  background: #9747ff;
+  color: #ffffff;
 }
 .contacto {
-    margin-top: 1vh;
+  margin-top: 1vh;
 }
 
-form{
-	width: 70%;
-    margin: 20vh auto 20vh auto;
-    color: #FFFFFF;
-
+form {
+  width: 70%;
+  margin: 20vh auto 20vh auto;
+  color: #ffffff;
 }
 
-form label{
-	width: 150vh;
-	font-weight:bold;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 23px;
-	display:inline-block;
+form label {
+  width: 150vh;
+  font-weight: bold;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  display: inline-block;
 }
 
 form input[type="text"],
-form input[type="email"]{
-	width:100%;
-	padding: 1vh;
-	border:1px solid #f6f6f6;
-	border-radius:30px;
-	background-color:#f6f6f6;
-	margin:6px 0;
-	display:inline-block;
+form input[type="email"] {
+  width: 100%;
+  padding: 1vh;
+  border: 1px solid #f6f6f6;
+  border-radius: 30px;
+  background-color: #f6f6f6;
+  margin: 6px 0;
+  display: inline-block;
 }
 
-form input[type="submit"]{
-    font-size: 3vh;
-    line-height: 24px;
-    text-align: center;
-    font-weight:bold;
-	padding: 1vh 4vh;
-	margin-top: 3vh;
-	border-radius:30px;
-	background-color:#f6f6f6;
-} 
-
-form input[type="submit"]:hover{
-	cursor:pointer;
-    background-color:#9747FF;
-    text-justify: center !important;
-
+form input[type="submit"] {
+  font-size: 3vh;
+  line-height: 24px;
+  text-align: center;
+  font-weight: bold;
+  padding: 1vh 4vh;
+  margin-top: 3vh;
+  border-radius: 30px;
+  background-color: #f6f6f6;
 }
 
-textarea{
-	width:100%;
-	height:100px;
-    padding:10px 10px;
-	border:1px solid #f6f6f6;
-	border-radius:30px;
-	background-color:#f6f6f6;			
-	margin:8px 0;
-	/*resize: vertical | horizontal | none | both*/
-	resize:none;
-	display:block;
+form input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #9747ff;
+  text-justify: center !important;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px 10px;
+  border: 1px solid #f6f6f6;
+  border-radius: 30px;
+  background-color: #f6f6f6;
+  margin: 8px 0;
+  /*resize: vertical | horizontal | none | both*/
+  resize: none;
+  display: block;
 }
 
 /* modal Gracias */
 /******************/
 
 .textoGracias {
-    padding: 3vh;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 49px;
-    text-align: center;
-    color: #FFFFFF ;
-}  
+  padding: 3vh;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #ffffff;
+}
 
 .closeGracias {
-	background: #FFFFFF;
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #14041E;
-    padding: 10px 30px 10px 30px;
-    text-decoration: none;
-	font-weight: bold;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-	-moz-box-shadow: 1px 1px 3px #000;
-	-webkit-box-shadow: 1px 1px 3px #000;
-	box-shadow: 1px 1px 3px #000;
+  background: #ffffff;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #14041e;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
 }
-.closeGracias:hover { 
-    color: #9747FF;;
-    background: #14041E; }
-
-
+.closeGracias:hover {
+  color: #9747ff;
+  background: #14041e;
+}
 
 /* Página 404   */
 
 .fondoError404 {
-    overflow-x: hidden;
-    background: #14041E;
-    color: #FFFFFF;
+  overflow-x: hidden;
+  background: #14041e;
+  color: #ffffff;
 }
 
 .logo404 {
-    position: absolute; 
-    width: 150px;
-    height: 150px;
-    left: 50px;
-    top: 50px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 50px;
+  top: 50px;
 }
 
 .error404 {
-    padding-top: 10%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  padding-top: 10%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 
 .boton404 {
-    width: 60px;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight:bold;
-	padding:15px;
-	border-radius:30px;
-	color:#000;
-	background-color:#f6f6f6;
-    list-style-type: none;
-    text-decoration: none;
-} 
+  width: 60px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 30px;
+  color: #000;
+  background-color: #f6f6f6;
+  list-style-type: none;
+  text-decoration: none;
+}
 
-.boton404:hover{
-	cursor:pointer;
+.boton404:hover {
+  cursor: pointer;
 }
 
 .textoContacto {
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 15px;
-    line-height: 25px;  
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 #modalNosotros,
 #modalProductos,
 #modalContact,
 #modalGracias {
-    background-color:  rgba(236, 215, 251, 0.53) !important;
+  background-color: rgba(236, 215, 251, 0.53) !important;
 }
 
 .hiddenGracias {
+  display: none;
+}
+
+@media screen and (max-width: 1160px) {
+  .menuMobile {
+    display: flex;
+  }
+
+  .gridNav {
+    background: linear-gradient(
+      180deg,
+      #0b0610 43.75%,
+      #4e327b 64.06%,
+      #06010a 98.96%
+    );
+    transform: translate(-500px);
+  }
+
+  .menu-show {
+    transform: translate(0px);
+  }
+
+  .gridNav {
+    position: absolute;
+    max-width: 500px;
+    width: 85vw;
+    height: 100vh;
+    z-index: 1;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+
+  .redes {
     display: none;
+  }
+
+  .media1 img {
+    width: 50vw;
+  }
+  .media2 img {
+    width: 50vw;
+  }
+  .media3 img {
+    width: 50vw;
+  }
+  .media4 img {
+    width: 50vw;
+  }
+  .media5 img {
+    width: 50vw;
+  }
+  .media6 img {
+    width: 50vw;
+  }
+  .media7 img {
+    width: 50vw;
+  }
+  .media8 img {
+    width: 50vw;
+  }
+  .media9 img {
+    width: 50vw;
+  }
 }
 
-@media screen and (max-width: 900px){
-    .menuMobile {
-        display: flex;
-    }
+@media screen and (min-width: 1160px) {
+  .gridMain {
+    grid-template-areas:
+      "a b c"
+      "d b f"
+      "d e f"
+      "g h i";
+  }
 
-    .gridNav {
-        background: linear-gradient(180deg, #0B0610 43.75%, #4E327B 64.06%, #06010A 98.96%);
-        transform: translate(-500px);
-    }
+  .media1 {
+    grid-area: a;
+    max-width: 352px;
+  }
 
-    .menu-show {
-        transform: translate(0px);
-    }
+  .media2 {
+    grid-area: b;
+    max-width: 352px;
+  }
 
-    .gridNav{
-        position: absolute;
-        max-width: 500px;
-        width: 385px;
-        height: 120vh;
-        z-index: 1;
-    }
+  .media3 {
+    grid-area: c;
+    max-width: 352px;
+  }
+
+  .media4 {
+    grid-area: d;
+    max-width: 352px;
+  }
+
+  .media5 {
+    grid-area: e;
+    max-width: 352px;
+  }
+
+  .media6 {
+    grid-area: f;
+    max-width: 352px;
+  }
+
+  .media7 {
+    grid-area: g;
+    max-width: 352px;
+  }
+
+  .media8 {
+    grid-area: h;
+    max-width: 352px;
+  }
+
+  .media9 {
+    grid-area: i;
+    max-width: 352px;
+  }
+
+  .logoProductos {
+    display: block;
+  }
+
+  .body-grid {
+    grid-template-columns: 400px 1fr;
+  }
 }
+
+/*@media screen and (min-width: 800px) {
+  .gridMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}*/
