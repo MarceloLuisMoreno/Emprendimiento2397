@@ -24,21 +24,37 @@
 
 .gridMain {
   background: #14041e;
-  
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-  
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 /*nav-bar mobile*/
 .menuMobile {
   cursor: pointer;
-  display: none;
-  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .menuImg {
-  width: 25vw;
+  width: clamp(3rem, 5vw, 6rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logoMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoMobile p {
+  color: #ecd7fb;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 6rem);
 }
 
 /* nav-bar */
@@ -53,26 +69,29 @@
   font-size: 24px;
   line-height: 33px;
   position: absolute;
-  top: 280px;
+  top: 50px;
+}
+
+.nav-bar ul {
+  list-style: none;
 }
 
 .nav-bar a {
   list-style-type: none;
-  padding: 42px;
+  padding: 18px;
   color: #ecd7fb;
   display: block;
   text-decoration: none;
 }
 
-.logo {
-  position: absolute;
-  width: 200px;
-  height: 200px;
+.nav-bar p {
+  color: #fff;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  left: 93px;
-  top: 68px;
+  margin-bottom: 60px;
+}
+
+.logo {
+  display: none;
 }
 
 /* Font navbar */
@@ -85,30 +104,21 @@
 }
 
 .redes {
-  display: flex;
-  left: 50px;
-  position: absolute;
-  width: 290px;
-  height: 33px;
-  background: #ecd7fb;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
+  display: none;
 }
 
 .whatsapp {
   position: fixed;
   width: 10vh;
   height: 10vh;
-  bottom: 5vh;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 6.8vh;
-  z-index: 100;
-  bottom: 4%;
+  z-index: 1;
+  bottom: 12vh;
   right: 3.5%;
-  z-index: 999999;
 }
 
 /* media */
@@ -147,6 +157,7 @@
 
 .media6 {
   filter: drop-shadow(0px 4px 10px rgba(236, 215, 251, 0.25));
+  border-radius: 20px;
 }
 
 .media7 {
@@ -501,11 +512,45 @@ textarea {
   display: none;
 }
 
-@media screen and (max-width: 1160px) {
-  .menuMobile {
-    display: flex;
-  }
+/*redes mobile*/
+.redesMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background-color: #ECD7FB;
+  color: #fff;
+  font-size: 6.8vh;
+  z-index: 1;
+  bottom: 0;
+}
 
+.redesMobile ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding:0;
+  margin-bottom: 0.2rem;
+}
+
+.redesMobile a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(1rem, 1vh, 4rem);
+  font-family: Serif;
+  font-weight: bold;
+  color: #2B0F49;
+  text-decoration: none;
+}
+
+.redesMobile img {
+  width: 5vh;
+}
+@media screen and (max-width: 1160px) {
   .gridNav {
     background: linear-gradient(
       180deg,
@@ -524,14 +569,10 @@ textarea {
     position: absolute;
     max-width: 500px;
     width: 85vw;
-    height: 100vh;
+    height: 120vh;
     z-index: 1;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-  }
-
-  .redes {
-    display: none;
   }
 
   .media1 img {
@@ -564,57 +605,93 @@ textarea {
 }
 
 @media screen and (min-width: 1160px) {
+  .redes {
+    display: flex;
+    left: 50px;
+    position: absolute;
+    width: 290px;
+    height: 33px;
+    background: #ecd7fb;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+  }
+
+  .menuMobile {
+    display: none;
+  }
+  .nav-bar {
+    top: 280px;
+  }
+
+  .nav-bar p {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 93px;
+    top: 68px;
+    display: block;
+  }
+
   .gridMain {
     grid-template-areas:
       "a b c"
       "d b f"
       "d e f"
       "g h i";
+    grid-template-columns: 25vw 25vw 25vw;
+  }
+
+  .gridNav div {
+    align-items: flex-start;
   }
 
   .media1 {
     grid-area: a;
-    max-width: 352px;
+    width: 24vw;
   }
 
   .media2 {
     grid-area: b;
-    max-width: 352px;
+    width: 24vw;
   }
 
   .media3 {
     grid-area: c;
-    max-width: 352px;
+    width: 24vw;
   }
 
   .media4 {
     grid-area: d;
-    max-width: 352px;
+    width: 24vw;
   }
 
   .media5 {
     grid-area: e;
-    max-width: 352px;
+    width: 24vw;
   }
 
   .media6 {
     grid-area: f;
-    max-width: 352px;
+    width: 24vw;
   }
 
   .media7 {
     grid-area: g;
-    max-width: 352px;
+    width: 24vw;
   }
 
   .media8 {
     grid-area: h;
-    max-width: 352px;
+    width: 24vw;
   }
 
   .media9 {
     grid-area: i;
-    max-width: 352px;
+    width: 24vw;
   }
 
   .logoProductos {
@@ -623,6 +700,12 @@ textarea {
 
   .body-grid {
     grid-template-columns: 400px 1fr;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .gridMain {
+    grid-template-columns: 21vw 21vw 21vw;
   }
 }
 
