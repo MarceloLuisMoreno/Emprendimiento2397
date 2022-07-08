@@ -616,6 +616,10 @@ textarea {
     border-radius: 20px;
   }
 
+  .redesMobile {
+    display: none;
+  }
+
   .menuMobile {
     display: none;
   }
