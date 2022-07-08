@@ -93,11 +93,12 @@
                 <div class="redes">
                     <a href="https://instagram.com/2397.arg?igshid=YmMyMTA2M2Y="><img src="./img/iconoInstagram.png"
                             class="iconoInstagram" alt="Icono Instagram"></a>
-                    <a href="https://www.facebook.com/103433652435134/posts/103437932434706/?d=n&substory_index=0"><img
-                            src="./img/iconoFacebook.png" class="iconoFacebook" alt="Icono Facebook.png"></a>
+                    <a href="https://www.facebook.com/2397-hoodies-103433652435134/"><img src="./img/iconoFacebook.png"
+                            class="iconoFacebook" alt="Icono Facebook.png"></a>
                     <a href="https://vm.tiktok.com/ZMNAYpDEb/"><img src="./img/iconoTikTok.png" class="iconoTikTok"
                             alt="Icono TikTok"></a>
-                    <a href="#modalContact"><img src="./img/iconoEmail.png" class="iconoEmail" alt="Icono Email"></a>
+                    <a class="" aria-current="page" href="#modalContact" data-bs-toggle="modal"
+                        data-backdrop="false"><img src="./img/iconoEmail.png" class="iconoEmail" alt="Icono Email"></a>
                 </div>
             </div>
 
@@ -145,7 +146,7 @@
 
     <!-- Acerca de Nosotros -->
     <div id="modalNosotros" class="modal fade" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body fondoLuna">
                     <div class="text-end"> <button type="button" class="btn buttonClose" data-bs-dismiss="modal"
@@ -169,7 +170,7 @@
 
     <!-- Acerca Productos -->
     <div id="modalProductos" class="modal fade" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body fondoLuna">
                     <div class="text-end"> <button type="button" class="btn buttonClose" data-bs-dismiss="modal"
@@ -218,141 +219,51 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Modal Buzo 1 -->
-        <div id="modalProducto1" class="modal fade" data-backdrop="static" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="./img/productoBuzo1.png" class="card-img img-fluid imgBuzo" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <div id="btnProducto1" class="text-end"> <button type="button"
-                                            class="btn buttonClose">X</button>
-                                    </div>
-                                    <script>
-                                        const btnProducto1 = document.getElementById('btnProducto1');
-                                        btnProducto1.addEventListener('click', function (e) {
-                                            e.preventDefault();
-                                            $('#modalProducto1').modal('hide');
-                                            $('#modalProductos').modal('show');
-                                        })
-                                    </script>
-                                    <div class="textoProducto pb-5">
-                                        <p>Naranja: Queen of Owls<br><br>Buzo oversized unisex, hecho de friza.
-                                            Disponible en talles desde el XS hasta el XL .
-                                        </p>
-                                    </div>
-                                    <div class="cardFotoProducto">
-                                        <img src="./img/buzo1-2.png" alt="">
-                                        <img src="./img/buzo1-3.png" alt="">
-                                        <img src="./img/buzo1-4.png" alt="">
-                                    </div>
-                                    <br>
-                                    <div class="text-center p-5 pb-5">
-                                        <a href="https://ropa2397.mitiendanube.com/productos/hoodie-queen-of-owls/"
-                                            class="botonComprar text-center">Comprar</a>
-                                    </div>
-                                    <br><br><br>
-                                </div>
-                            </div>
+    <!-- Modal Buzo 1 -->
+    <div id="modalProducto1" class="modal fade" data-backdrop="static" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="./img/productoBuzo1.png" class="card-img img-fluid imgBuzo" alt="...">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Modal Buzo 2 -->
-        <div id="modalProducto2" class="modal fade" data-backdrop="static" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="./img/productoBuzo1.png" class="card-img img-fluid imgBuzo" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <div id="btnProducto2" class="text-end"> <button type="button"
-                                            class="btn buttonClose">X</button>
-                                    </div>
-                                    <script>
-                                        const btnProducto2 = document.getElementById('btnProducto2');
-                                        btnProducto2.addEventListener('click', function (e) {
-                                            e.preventDefault();
-                                            $('#modalProducto2').modal('hide');
-                                            $('#modalProductos').modal('show');
-                                        })
-                                    </script>
-
-                                    <div class="textoProducto pb-5">
-                                        <p>Violeta: First Man on the Moon<br><br>Buzo oversized unisex, hecho de friza.
-                                            Disponible en talles desde el XS hasta el XL .
-                                        </p>
-                                    </div>
-                                    <div class="cardFotoProducto">
-                                        <img src="./img/buzo1-2.png" alt="">
-                                        <img src="./img/buzo1-3.png" alt="">
-                                        <img src="./img/buzo1-4.png" alt="">
-                                    </div>
-                                    <br>
-                                    <div class="text-center p-5 pb-5">
-                                        <a href="https://ropa2397.mitiendanube.com/productos/hoodie-first-man-on-the-moon/"
-                                            class="botonComprar text-center">Comprar</a>
-                                    </div>
-                                    <br><br><br>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <div id="btnProducto1" class="text-end"> <button type="button"
+                                        class="btn buttonClose">X</button>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal Buzo 3 -->
-        <div id="modalProducto3" class="modal fade" data-backdrop="static" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="./img/productoBuzo1.png" class="card-img img-fluid imgBuzo" alt="...">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <div id="btnProducto3" class="text-end"> <button type="button"
-                                            class="btn buttonClose">X</button>
-                                    </div>
-                                    <script>
-                                        const btnProducto3 = document.getElementById('btnProducto3');
-                                        btnProducto3.addEventListener('click', function (e) {
-                                            e.preventDefault();
-                                            $('#modal352px 352pxProducto3').modal('hide');
+                                <script>
+                                    const btnProducto1 = document.getElementById('btnProducto1');
+                                    btnProducto1.addEventListener('click', function (e) {
+                                        e.preventDefault();
+                                        $('#modalProducto1').modal('hide');
+                                        if ($('#modalProductos').css('display') == 'none') {
+                                            // Acción si el elemento no es visible
+                                        } else {
+                                            // Acción si el elemento es visible
                                             $('#modalProductos').modal('show');
-                                        })
-                                    </script>
-
-                                    <div class="textoProducto pb-5">
-                                        <p>Gris: Angels and Devils<br><br>Buzo oversized unisex, hecho de friza.
-                                            Disponible en talles desde el XS hasta el XL .
-                                        </p>
-                                    </div>
-                                    <div class="cardFotoProducto">
-                                        <img src="./img/buzo1-2.png" alt="">
-                                        <img src="./img/buzo1-3.png" alt="">
-                                        <img src="./img/buzo1-4.png" alt="">
-                                    </div>
-                                    <br>
-                                    <div class="text-center p-5 pb-5">
-                                        <a href="https://ropa2397.mitiendanube.com/productos/hoodie-angel-devils/"
-                                            class="botonComprar text-center">Comprar</a>
-                                    </div>
-                                    <br><br><br>
+                                        }
+                                    })
+                                </script>
+                                <div class="textoProducto pb-5">
+                                    <p>Naranja: Queen of Owls<br><br>Buzo oversized unisex, hecho de friza.
+                                        Disponible en talles desde el XS hasta el XL .
+                                    </p>
                                 </div>
+                                <div class="cardFotoProducto">
+                                    <img src="./img/buzo1-2.png" alt="">
+                                    <img src="./img/buzo1-3.png" alt="">
+                                    <img src="./img/buzo1-4.png" alt="">
+                                </div>
+                                <br>
+                                <div class="text-center p-5 pb-5">
+                                    <a href="https://ropa2397.mitiendanube.com/productos/hoodie-queen-of-owls/"
+                                        class="botonComprar text-center">Comprar</a>
+                                </div>
+                                <br><br><br>
                             </div>
                         </div>
                     </div>
@@ -361,12 +272,118 @@
         </div>
     </div>
 
+
+    <!-- Modal Buzo 2 -->
+    <div id="modalProducto2" class="modal fade" data-backdrop="static" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="./img/productoBuzo1.png" class="card-img img-fluid imgBuzo" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <div id="btnProducto2" class="text-end"> <button type="button"
+                                        class="btn buttonClose">X</button>
+                                </div>
+                                <script>
+                                    const btnProducto2 = document.getElementById('btnProducto2');
+                                    btnProducto2.addEventListener('click', function (e) {
+                                        e.preventDefault();
+                                        $('#modalProducto2').modal('hide');
+                                        if ($('#modalProductos').css('display') == 'none') {
+                                            // Acción si el elemento no es visible
+                                        } else {
+                                            // Acción si el elemento es visible
+                                            $('#modalProductos').modal('show');
+                                        }
+                                    })
+                                </script>
+
+                                <div class="textoProducto pb-5">
+                                    <p>Violeta: First Man on the Moon<br><br>Buzo oversized unisex, hecho de friza.
+                                        Disponible en talles desde el XS hasta el XL .
+                                    </p>
+                                </div>
+                                <div class="cardFotoProducto">
+                                    <img src="./img/buzo1-2.png" alt="">
+                                    <img src="./img/buzo1-3.png" alt="">
+                                    <img src="./img/buzo1-4.png" alt="">
+                                </div>
+                                <br>
+                                <div class="text-center p-5 pb-5">
+                                    <a href="https://ropa2397.mitiendanube.com/productos/hoodie-first-man-on-the-moon/"
+                                        class="botonComprar text-center">Comprar</a>
+                                </div>
+                                <br><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Buzo 3 -->
+    <div id="modalProducto3" class="modal fade" data-backdrop="static" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="./img/productoBuzo1.png" class="card-img img-fluid imgBuzo" alt="...">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <div id="btnProducto3" class="text-end"> <button type="button"
+                                        class="btn buttonClose">X</button>
+                                </div>
+                                <script>
+                                    const btnProducto3 = document.getElementById('btnProducto3');
+                                    btnProducto3.addEventListener('click', function (e) {
+                                        e.preventDefault();
+                                        $('#modalProducto3').modal('hide');
+                                        if ($('#modalProductos').css('display') == 'none') {
+                                            // Acción si el elemento no es visible
+                                        } else {
+                                            // Acción si el elemento es visible
+                                            $('#modalProductos').modal('show');
+                                        }
+                                    })
+                                </script>
+
+                                <div class="textoProducto pb-5">
+                                    <p>Gris: Angels and Devils<br><br>Buzo oversized unisex, hecho de friza.
+                                        Disponible en talles desde el XS hasta el XL .
+                                    </p>
+                                </div>
+                                <div class="cardFotoProducto">
+                                    <img src="./img/buzo1-2.png" alt="">
+                                    <img src="./img/buzo1-3.png" alt="">
+                                    <img src="./img/buzo1-4.png" alt="">
+                                </div>
+                                <br>
+                                <div class="text-center p-5 pb-5">
+                                    <a href="https://ropa2397.mitiendanube.com/productos/hoodie-angel-devils/"
+                                        class="botonComprar text-center">Comprar</a>
+                                </div>
+                                <br><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <!-- Fin Seccion Productos -->
 
 
     <!-- Modal Contacto -->
     <div id="modalContact" class="modal fade" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body fondoLuna">
                     <div class="text-end"> <button type="button" class="btn buttonClose" data-bs-dismiss="modal"
@@ -412,13 +429,13 @@
 
     <!-- Gracias -->
     <div id="modalGracias" class="modal fade" data-backdrop="static" style="z-index: 1600">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body fondoLuna">
                     <div class="text-end"> <button type="button" class="btn buttonClose" data-bs-dismiss="modal"
                             aria-label="Close">X</button>
                     </div>
-                    <div class="textoGracias">
+                    <div class="textoGracias m-5">
                         <p>Muchas gracias por <br>
                             completar el formulario. <br>
                             Será contactado a la brevedad
