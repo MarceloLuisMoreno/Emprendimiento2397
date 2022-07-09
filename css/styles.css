@@ -208,18 +208,24 @@
 }
 
 /*Modal*/
-.modal-content, .modal-body {
+.modal-content,
+.modal-body {
   border-radius: 2rem;
+ width: 100%;
+}
+
+.modal-content {
+  background: #14041e;
 }
 
 /* modal Nosotros */
 /******************/
 .textoNosotros {
-  padding: 3vh;
+  padding: 2vh;
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: clamp(2rem, 5vw, 36px);
   line-height: 49px;
   text-align: center;
   color: #ffffff;
@@ -270,7 +276,7 @@
 }
 
 .sizeBuzo {
-  width: 100%;
+  width: 80%;
 }
 .cardsProductos {
   display: grid;
@@ -285,19 +291,19 @@
   transition: 0.3s;
 }
 
-.cardProducto:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
 .containerCardProducto {
   text-align: center;
 }
 
 .cardFotoProducto {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
   gap: 1rem;
   justify-content: space-between;
+}
+
+.cardFotoProducto img {
+  width: 100%;
 }
 
 /* modal Producto Individual */
@@ -309,14 +315,18 @@
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  font-size:42px;
+  font-size: clamp(1.5rem, 5vw, 30px);
   line-height: 36px;
-  color: #000000;
+  color: #ecd7fb;
+}
+
+.textoProducto h5 {
+  display: none;
 }
 
 .imgBuzo {
-  padding: 0 !important;
   margin: 0 !important;
+  border-radius: 50px;
 }
 
 .botonComprar {
@@ -328,10 +338,42 @@
   padding-left: 5vh;
   padding-right: 5vh;
   border-radius: 30px;
-  color: #f6f6f6;
-  background-color: #2b0f49;
+  color: #2b0f49;
+  background-color: #f6f6f6;
   list-style-type: none;
   text-decoration: none;
+}
+
+.txt-foto {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.tituloProducto {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1rem, 5vw, 30px);
+  text-align: center;
+  margin-top: 10px;
+  width: 90%;
+  height: 50px;
+  background: #ecd7fb;
+  border-radius: 25px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.divTitulo {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.card-img {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* modal Contacto */
@@ -341,9 +383,13 @@
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: clamp(1rem, 5vw, 30px);;
   line-height: 49px;
-  color: #ffffff;
+  color: #000000;
+  background-color: #ecd7fb;
+  border-radius: 30px;
+  padding-left: 0.5rem;
+  margin-top: 1rem;
 }
 
 /* Contacto */
@@ -362,10 +408,19 @@
   margin-top: 1vh;
 }
 
+#modalContact .modal-body {
+  height: 90vh;
+  overflow: hidden;
+}
+
 form {
-  width: 70%;
+  width: 80%;
+  height: 70vh;
   margin: 20vh auto 20vh auto;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 form label {
@@ -409,7 +464,7 @@ form input[type="submit"]:hover {
 
 textarea {
   width: 100%;
-  height: 100px;
+  height: 250px;
   padding: 10px 10px;
   border: 1px solid #f6f6f6;
   border-radius: 30px;
@@ -418,6 +473,12 @@ textarea {
   /*resize: vertical | horizontal | none | both*/
   resize: none;
   display: block;
+}
+
+.btnEnviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* modal Gracias */
@@ -532,7 +593,7 @@ textarea {
   position: fixed;
   width: 100%;
   height: 10vh;
-  background-color: #ECD7FB;
+  background-color: #ecd7fb;
   color: #fff;
   font-size: 6.8vh;
   z-index: 1;
@@ -544,7 +605,7 @@ textarea {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  padding:0;
+  padding: 0;
   margin-bottom: 0.2rem;
 }
 
@@ -555,7 +616,7 @@ textarea {
   font-size: clamp(1rem, 1vh, 4rem);
   font-family: Serif;
   font-weight: bold;
-  color: #2B0F49;
+  color: #2b0f49;
   text-decoration: none;
 }
 
@@ -564,7 +625,7 @@ textarea {
 }
 
 /*titulo producto*/
-.descripcionProd{
+.descripcionProd {
   display: none;
 }
 
@@ -734,7 +795,11 @@ textarea {
     background: none;
   }
 
-  .descripcionProd{
+  .cardProducto:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .descripcionProd {
     display: block;
   }
 
@@ -753,6 +818,38 @@ textarea {
   .nav-bar a {
     padding: 5vh;
   }
+}
 
-  
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 75vw;
+    margin: 1.75rem auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .txt-foto {
+    flex-direction: column;
+  }
+
+  .tituloProducto {
+    display: none;
+  }
+
+  .divTitulo {
+    display: none;
+  }
+
+  .textoProducto h5 {
+    display: block;
+  }
+  .textoContactanos {
+    color: #fff;
+    background-color: #2b0f4900;
+    text-align: center;
+  }
+
+  form {
+    width: 60%;
+  }
 }
