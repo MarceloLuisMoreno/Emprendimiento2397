@@ -38,10 +38,13 @@
 }
 
 .menuImg {
-  width: clamp(3rem, 5vw, 6rem);
+  width: 4rem;
   position: absolute;
   top: 0;
   left: 0;
+  color: #fff;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .logoMobile {
@@ -55,6 +58,7 @@
   color: #ecd7fb;
   text-align: center;
   font-size: clamp(2rem, 5vw, 6rem);
+  padding-top: 0.5rem;
 }
 
 /* nav-bar */
@@ -78,7 +82,7 @@
 
 .nav-bar a {
   list-style-type: none;
-  padding: 2vh;
+  padding: 3vh;
   color: #ecd7fb;
   display: block;
   text-decoration: none;
@@ -87,7 +91,16 @@
 .nav-bar p {
   color: #fff;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 1rem;
+}
+
+.nav-bar li img {
+  width:2rem;
+}
+
+.nav-bar li {
+  display: flex;
+  flex-direction: row;
 }
 
 .logo {
@@ -631,27 +644,27 @@ textarea {
 
 @media screen and (max-width: 1160px) {
   .gridNav {
-    background: linear-gradient(
-      180deg,
-      #0b0610 43.75%,
-      #4e327b 64.06%,
-      #06010a 98.96%
-    );
     transform: translate(-500px);
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
   }
 
   .menu-show {
     transform: translate(0px);
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
   }
 
   .gridNav {
     position: absolute;
     max-width: 500px;
     width: 85vw;
-    height: 120vh;
+    height: 70vh;
     z-index: 1;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
   }
 
   .media1 img {
@@ -712,6 +725,14 @@ textarea {
 
   .nav-bar p {
     display: none;
+  }
+
+  .nav-bar li {
+    display: block;
+  }
+
+  .nav-bar li img {
+    display: none;;
   }
 
   .logo {
@@ -848,6 +869,8 @@ textarea {
     background-color: #2b0f4900;
     text-align: center;
   }
+
+  
 
   form {
     width: 60%;
