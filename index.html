@@ -71,23 +71,24 @@
     </div>
     <section class="body-grid">
         <div class="gridNav">
+            <div class="closeLogo"><img src="./assets/close.svg" class="close" alt="close"></div>
             <a href="#inicio"><img src="./img/logo2397.png" class="logo" alt="Imagen logo 2397"></a>
             <div class="nav-bar">
                 <p>Bienvenidos!</p>
                 <ul>
-                    <li>
+                    <li><img src="./assets/user.svg" alt="">
                         <a class="" aria-current="page" href="#modalNosotros" data-bs-toggle="modal"
                             data-backdrop="false" tros" data-bs-toggle="modal" data-backdrop="false">Acerca de
                             Nosotros</a>
                     </li>
-                    <li>
+                    <li><img src="./assets/shop.svg" alt="">
                         <a class="" aria-current="page" href="#modalProductos" data-bs-toggle="modal"
                             data-backdrop="false">Productos</a>
                     </li>
-                    <li>
+                    <li><img src="./assets/cart.svg" alt="">
                         <a class="" aria-current="page" href="https://ropa2397.mitiendanube.com/">Shop</a>
                     </li>
-                    <li>
+                    <li><img src="./assets/contact.svg" alt="">
                         <a class="" aria-current="page" href="#modalContact" data-bs-toggle="modal"
                             data-backdrop="false">Contacto</a>
                     </li>
@@ -108,6 +109,24 @@
         <!-- Fin navbar  -->
 
         <!-- Fotos  -->
+        <div class="gridMainMobile">
+            <div class="media1"> <a href="#modalProducto2" aria-current="page" data-bs-toggle="modal"
+                    data-backdrop="false"> <img src="./img/media-mobile/media-mobile1.png" alt="Imagen media2">
+                </a></div>
+            <div class="media2"> <a href="#modalProducto2" aria-current="page" data-bs-toggle="modal"
+                    data-backdrop="false"> <img src="./img/media-mobile/media-mobile3.png" alt="Imagen media5">
+                </a></div>
+            <div class="media3"><a href="#modalProducto1" aria-current="page" data-bs-toggle="modal"
+                    data-backdrop="false"> <img src="./img/media-mobile/media-mobile.png" alt="Imagen media3">
+                </a></div>
+            <div class="media4"><a href="#modalProducto1" aria-current="page" data-bs-toggle="modal"
+                    data-backdrop="false"> <img src="./img/media-mobile/media-mobile4.png" alt="Imagen media6">
+                </a></div>
+            <div class="media5"><a href="#modalProducto3" aria-current="page" data-bs-toggle="modal"
+                    data-backdrop="false"> <img src="./img/media-mobile/media-mobile5.png" alt="Imagen media7">
+                </a></div>
+        </div>
+        </div>
         <div class="gridMain">
             <div class="media1"><a href="#modalProducto1" aria-current="page" data-bs-toggle="modal"
                     data-backdrop="false"> <img src="./img/media1.png" alt="Imagen media2">
@@ -185,7 +204,7 @@
                                     <p>Productos</p>
                                     <img src="../img/logo2397-productos.png" loading="lazy" alt="Logo de 2397"
                                         class="logoProductos text-center">
-                                    <p>Buzos con diseño Urbano.
+                                    <p class="descripcionProd">Buzos con diseño Urbano.
                                     </p>
                                 </div>
                             </div>
@@ -228,15 +247,18 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
+                    <div id="btnProducto1" class="text-end"> <button type="button" class="btn buttonClose">X</button>
+                    </div>
+                    <div class="divTitulo">
+                        <p class="tituloProducto">Naranja: Queen of Owls</p>
+                    </div>
                     <div class="row g-0">
                         <div class="col-md-6">
                             <img src="./img/productoBuzo1.png" class="card-img img-fluid imgBuzo" alt="...">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
-                                <div id="btnProducto1" class="text-end"> <button type="button"
-                                        class="btn buttonClose">X</button>
-                                </div>
+
                                 <script>
                                     const btnProducto1 = document.getElementById('btnProducto1');
                                     btnProducto1.addEventListener('click', function (e) {
@@ -250,22 +272,23 @@
                                         }
                                     })
                                 </script>
-                                <div class="textoProducto pb-5">
-                                    <p>Naranja: Queen of Owls<br><br>Buzo oversized unisex, hecho de friza.
-                                        Disponible en talles desde el XS hasta el XL .
-                                    </p>
-                                </div>
-                                <div class="cardFotoProducto">
-                                    <img src="./img/buzo1-2.png" alt="">
-                                    <img src="./img/buzo1-3.png" alt="">
-                                    <img src="./img/buzo1-4.png" alt="">
+                                <div class="txt-foto">
+                                    <div class="textoProducto ">
+                                        <h2>Naranja: Queen of Owls</h2>
+                                        <p>Buzo oversized unisex, hecho de friza.
+                                            Disponible en talles desde el XS hasta el XL .</p>
+                                    </div>
+                                    <div class="cardFotoProducto">
+                                        <img src="./img/buzo1-2.png" alt="">
+                                        <img src="./img/buzo1-3.png" alt="">
+                                        <img src="./img/buzo1-4.png" alt="">
+                                    </div>
                                 </div>
                                 <br>
-                                <div class="text-center p-5 pb-5">
+                                <div class="text-center  ">
                                     <a href="https://ropa2397.mitiendanube.com/productos/hoodie-queen-of-owls/"
                                         class="botonComprar text-center">Comprar</a>
                                 </div>
-                                <br><br><br>
                             </div>
                         </div>
                     </div>
@@ -280,15 +303,18 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
+                    <div id="btnProducto2" class="text-end"> <button type="button" class="btn buttonClose">X</button>
+                    </div>
+                    <div class="divTitulo">
+                        <p class="tituloProducto">Violeta: First Man on the Moon</p>
+                    </div>
                     <div class="row g-0">
                         <div class="col-md-6">
                             <img src="./img/productoBuzo1.png" class="card-img img-fluid imgBuzo" alt="...">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
-                                <div id="btnProducto2" class="text-end"> <button type="button"
-                                        class="btn buttonClose">X</button>
-                                </div>
+
                                 <script>
                                     const btnProducto2 = document.getElementById('btnProducto2');
                                     btnProducto2.addEventListener('click', function (e) {
@@ -302,23 +328,25 @@
                                         }
                                     })
                                 </script>
+                                <div class="txt-foto">
+                                    <div class="textoProducto ">
+                                        <h2>Violeta: First Man on the Moon</h2>
+                                        <p>Buzo oversized unisex, hecho de friza. Disponible en tallas desde el XS hasta
+                                            el XL .</p>
+                                    </div>
+                                    <div class="cardFotoProducto">
+                                        <img src="./img/buzo1-2.png" alt="">
+                                        <img src="./img/buzo1-3.png" alt="">
+                                        <img src="./img/buzo1-4.png" alt="">
+                                    </div>
+                                </div>
 
-                                <div class="textoProducto pb-5">
-                                    <p>Violeta: First Man on the Moon<br><br>Buzo oversized unisex, hecho de friza.
-                                        Disponible en talles desde el XS hasta el XL .
-                                    </p>
-                                </div>
-                                <div class="cardFotoProducto">
-                                    <img src="./img/buzo1-2.png" alt="">
-                                    <img src="./img/buzo1-3.png" alt="">
-                                    <img src="./img/buzo1-4.png" alt="">
-                                </div>
+
                                 <br>
-                                <div class="text-center p-5 pb-5">
+                                <div class="text-center  ">
                                     <a href="https://ropa2397.mitiendanube.com/productos/hoodie-first-man-on-the-moon/"
                                         class="botonComprar text-center">Comprar</a>
                                 </div>
-                                <br><br><br>
                             </div>
                         </div>
                     </div>
@@ -332,15 +360,18 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
+                    <div id="btnProducto3" class="text-end"> <button type="button" class="btn buttonClose">X</button>
+                    </div>
+                    <div class="divTitulo">
+                        <p class="tituloProducto">Gris: Angels and Devils</p>
+                    </div>
                     <div class="row g-0">
                         <div class="col-md-6">
                             <img src="./img/productoBuzo1.png" class="card-img img-fluid imgBuzo" alt="...">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
-                                <div id="btnProducto3" class="text-end"> <button type="button"
-                                        class="btn buttonClose">X</button>
-                                </div>
+
                                 <script>
                                     const btnProducto3 = document.getElementById('btnProducto3');
                                     btnProducto3.addEventListener('click', function (e) {
@@ -354,23 +385,25 @@
                                         }
                                     })
                                 </script>
+                                <div class="txt-foto">
+                                    <div class="textoProducto ">
+                                        <h2>Gris: Angels and Devils</h2>
+                                        <p>Buzo oversized unisex, hecho de friza.
+                                            Disponible en talles desde el XS hasta el XL .</p>
 
-                                <div class="textoProducto pb-5">
-                                    <p>Gris: Angels and Devils<br><br>Buzo oversized unisex, hecho de friza.
-                                        Disponible en talles desde el XS hasta el XL .
-                                    </p>
+                                    </div>
+                                    <div class="cardFotoProducto">
+                                        <img src="./img/buzo1-2.png" alt="">
+                                        <img src="./img/buzo1-3.png" alt="">
+                                        <img src="./img/buzo1-4.png" alt="">
+                                    </div>
                                 </div>
-                                <div class="cardFotoProducto">
-                                    <img src="./img/buzo1-2.png" alt="">
-                                    <img src="./img/buzo1-3.png" alt="">
-                                    <img src="./img/buzo1-4.png" alt="">
-                                </div>
+
                                 <br>
-                                <div class="text-center p-5 pb-5">
+                                <div class="text-center  ">
                                     <a href="https://ropa2397.mitiendanube.com/productos/hoodie-angel-devils/"
                                         class="botonComprar text-center">Comprar</a>
                                 </div>
-                                <br><br><br>
                             </div>
                         </div>
                     </div>
@@ -391,19 +424,22 @@
                     <div class="text-end"> <button type="button" class="btn buttonClose" data-bs-dismiss="modal"
                             aria-label="Close">X</button>
                     </div>
+                    <h2 class="textoContactanos">Contactanos</h2>
                     <form class="contacto" name="contacto">
-                        <h2 class="textoContactanos">Contactanos</h2>
+
                         <label for="nombre" class="contacto">Nombre</label>
                         <div> <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
                         </div>
                         <label for="email">Correo</label>
-                        <div> <input type="email" name="email" id="email" placeholder="email" required />
+                        <div> <input type="email" name="email" id="email" placeholder="Email" required />
                         </div>
                         <p></p>
                         <label for="mensaje">Consulta</label>
-                        <textarea name="mensaje" for="mensaje" placeholder="escribe tu consulta"
+                        <textarea name="mensaje" for="mensaje" placeholder="Escribe tu consulta"
                             maxlength="600"></textarea>
-                        <input id="enviarCorreo" type="submit" value="Enviar"></input>
+                        <div class="btnEnviar">
+                            <input id="enviarCorreo" type="submit" value="Enviar"></input>
+                        </div>
                     </form>
                     <br>
                     <script>

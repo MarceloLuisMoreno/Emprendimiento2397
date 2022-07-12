@@ -2,6 +2,11 @@
   white-space: nowrap;
 }
 
+h2 {
+  text-align: center !important;
+  margin-bottom: 1.5rem;
+}
+
 .body {
   overflow-x: hidden;
   background: #14041e;
@@ -10,7 +15,7 @@
 .body-grid {
   display: grid;
   width: 100%;
-  grid-template-areas: "gridNav" "gridMain";
+  grid-template-areas: "gridNav" "gridMainMobile";
 }
 
 .gridNav {
@@ -22,13 +27,44 @@
   );
 }
 
-.gridMain {
-  background: #14041e;
+/*grid mobile*/
 
+.gridMain {
+  display: none;
+}
+
+.gridMainMobile {
+  background: #14041e;
   display: grid;
+  grid-template-areas:
+    "a b"
+    "c c"
+    "d e";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  margin-bottom: 15vh;
 }
+
+.media1 {
+  grid-area: a;
+}
+
+.media2 {
+  grid-area: b;
+}
+
+.media3 {
+  grid-area: c;
+}
+
+.media4 {
+  grid-area: d;
+}
+
+.media5 {
+  grid-area: e;
+}
+
 /*nav-bar mobile*/
 .menuMobile {
   cursor: pointer;
@@ -38,10 +74,12 @@
 }
 
 .menuImg {
-  width: clamp(3rem, 5vw, 6rem);
+  width: 4rem;
   position: absolute;
   top: 0;
   left: 0;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .logoMobile {
@@ -55,9 +93,22 @@
   color: #ecd7fb;
   text-align: center;
   font-size: clamp(2rem, 5vw, 6rem);
+  padding-top: 0.5rem;
 }
 
 /* nav-bar */
+
+.closeLogo{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  padding-top: 1rem;
+  padding-right: 1rem;
+}
+
+.closeLogo img{
+  width: 2.5rem;
+}
 .gridNav a:hover {
   color: #837b8b;
 }
@@ -78,7 +129,7 @@
 
 .nav-bar a {
   list-style-type: none;
-  padding: 18px;
+  padding: 3vh;
   color: #ecd7fb;
   display: block;
   text-decoration: none;
@@ -87,7 +138,16 @@
 .nav-bar p {
   color: #fff;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 1rem;
+}
+
+.nav-bar li img {
+  width: 2rem;
+}
+
+.nav-bar li {
+  display: flex;
+  flex-direction: row;
 }
 
 .logo {
@@ -118,12 +178,11 @@
   font-size: 6.8vh;
   z-index: 1;
   bottom: 12vh;
-  right: 3.5%;
+  right: 2%;
 }
 
 /* media */
-
-.gridMain div {
+.gridMainMobile div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -207,14 +266,25 @@
   top: 4px;
 }
 
+/*Modal*/
+.modal-content,
+.modal-body {
+  border-radius: 2rem;
+  width: 100%;
+}
+
+.modal-content {
+  background: #14041e;
+}
+
 /* modal Nosotros */
 /******************/
 .textoNosotros {
-  padding: 3vh;
+  padding: 2vh;
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: clamp(2rem, 5vw, 36px);
   line-height: 49px;
   text-align: center;
   color: #ffffff;
@@ -227,8 +297,8 @@
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: clamp(1rem, 5vw, 30px);
+  line-height: 1.5rem;
   text-align: center;
   margin-top: 10px;
 }
@@ -241,7 +311,7 @@
   height: 50px;
   background: #ecd7fb;
   border-radius: 25px;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
 }
 
 .logoProductos {
@@ -265,21 +335,19 @@
 }
 
 .sizeBuzo {
-  width: 100%;
+  width: 80%;
 }
 .cardsProductos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  gap: 1rem;
   margin: auto;
+  background: rgba(236, 215, 251, 0.25);
+  padding: 1rem;
+  border-radius: 25px;
 }
 .cardProducto {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-}
-
-.cardProducto:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .containerCardProducto {
@@ -288,9 +356,14 @@
 
 .cardFotoProducto {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 3fr));
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
   gap: 1rem;
   justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.cardFotoProducto img {
+  width: 100%;
 }
 
 /* modal Producto Individual */
@@ -302,14 +375,18 @@
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: clamp(1.5rem, 5vw, 30px);
   line-height: 36px;
-  color: #000000;
+  color: #ecd7fb;
+}
+
+.textoProducto h5 {
+  display: none;
 }
 
 .imgBuzo {
-  padding: 0 !important;
   margin: 0 !important;
+  border-radius: 50px;
 }
 
 .botonComprar {
@@ -321,10 +398,42 @@
   padding-left: 5vh;
   padding-right: 5vh;
   border-radius: 30px;
-  color: #f6f6f6;
-  background-color: #2b0f49;
+  color: #2b0f49;
+  background-color: #f6f6f6;
   list-style-type: none;
   text-decoration: none;
+}
+
+.txt-foto {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.tituloProducto {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1rem, 5vw, 30px);
+  text-align: center;
+  margin-top: 10px;
+  width: 90%;
+  height: 5vh;
+  background: #ecd7fb;
+  border-radius: 25px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.divTitulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* modal Contacto */
@@ -334,9 +443,13 @@
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: clamp(1rem, 5vw, 30px);
   line-height: 49px;
-  color: #ffffff;
+  color: #000000;
+  background-color: #ecd7fb;
+  border-radius: 30px;
+  padding-left: 0.5rem;
+  margin-top: 1rem;
 }
 
 /* Contacto */
@@ -355,10 +468,19 @@
   margin-top: 1vh;
 }
 
+#modalContact .modal-body {
+  height: 90vh;
+  overflow: hidden;
+}
+
 form {
-  width: 70%;
+  width: 80%;
+  height: 70vh;
   margin: 20vh auto 20vh auto;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 form label {
@@ -402,7 +524,7 @@ form input[type="submit"]:hover {
 
 textarea {
   width: 100%;
-  height: 100px;
+  height: 250px;
   padding: 10px 10px;
   border: 1px solid #f6f6f6;
   border-radius: 30px;
@@ -411,6 +533,12 @@ textarea {
   /*resize: vertical | horizontal | none | both*/
   resize: none;
   display: block;
+}
+
+.btnEnviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* modal Gracias */
@@ -525,7 +653,7 @@ textarea {
   position: fixed;
   width: 100%;
   height: 10vh;
-  background-color: #ECD7FB;
+  background-color: #ecd7fb;
   color: #fff;
   font-size: 6.8vh;
   z-index: 1;
@@ -537,7 +665,7 @@ textarea {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  padding:0;
+  padding: 0;
   margin-bottom: 0.2rem;
 }
 
@@ -548,68 +676,73 @@ textarea {
   font-size: clamp(1rem, 1vh, 4rem);
   font-family: Serif;
   font-weight: bold;
-  color: #2B0F49;
+  color: #2b0f49;
   text-decoration: none;
 }
 
 .redesMobile img {
   width: 5vh;
 }
+
+/*titulo producto*/
+.descripcionProd {
+  display: none;
+}
+
+/*Media Queries solo mobile*/
+
 @media screen and (max-width: 1160px) {
   .gridNav {
-    background: linear-gradient(
-      180deg,
-      #0b0610 43.75%,
-      #4e327b 64.06%,
-      #06010a 98.96%
-    );
     transform: translate(-500px);
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
   }
 
   .menu-show {
     transform: translate(0px);
+    transition: 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
   }
 
+  /*Nav*/
   .gridNav {
     position: absolute;
     max-width: 500px;
     width: 85vw;
-    height: 120vh;
+    height: 65vh;
     z-index: 1;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
   }
 
   .media1 img {
-    width: 50vw;
+    width: 45vw;
   }
   .media2 img {
-    width: 50vw;
+    width: 45vw;
   }
   .media3 img {
-    width: 50vw;
+    width: 90vw;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
   .media4 img {
-    width: 50vw;
+    width: 45vw;
   }
   .media5 img {
-    width: 50vw;
-  }
-  .media6 img {
-    width: 50vw;
-  }
-  .media7 img {
-    width: 50vw;
-  }
-  .media8 img {
-    width: 50vw;
-  }
-  .media9 img {
-    width: 50vw;
+    width: 45vw;
   }
 }
 
+/*Media Queries para desktop*/
+
 @media screen and (min-width: 1160px) {
+
+  .closeLogo {
+    display: none;
+  }
   .redes {
     display: flex;
     left: 50px;
@@ -632,7 +765,19 @@ textarea {
     top: 280px;
   }
 
+  .nav-bar a {
+    padding: 8vh;
+  }
+
   .nav-bar p {
+    display: none;
+  }
+
+  .nav-bar li {
+    display: block;
+  }
+
+  .nav-bar li img {
     display: none;
   }
 
@@ -645,13 +790,25 @@ textarea {
     display: block;
   }
 
+  .body-grid {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "gridNav" "gridMain";
+  }
+
+  .gridMainMobile {
+    display: none;
+  }
+
   .gridMain {
+    display: grid;
     grid-template-areas:
       "a b c"
       "d b f"
       "d e f"
       "g h i";
     grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: auto;
   }
 
   .gridNav div {
@@ -710,6 +867,30 @@ textarea {
   .body-grid {
     grid-template-columns: 400px 1fr;
   }
+
+  .cardsProductos {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    padding: 0;
+    background: none;
+  }
+
+  .cardProducto:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .descripcionProd {
+    display: block;
+  }
+
+  .textoProductos {
+    line-height: 32px;
+  }
+
+  .txt-foto {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
+  }
 }
 
 @media screen and (min-width: 1600px) {
@@ -718,10 +899,42 @@ textarea {
   }
 }
 
-/*@media screen and (min-width: 800px) {
-  .gridMain {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+@media screen and (min-width: 600px) {
+  .nav-bar a {
+    padding: 5vh;
   }
-}*/
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 75vw;
+    margin: 1.75rem auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .txt-foto {
+    flex-direction: column;
+  }
+
+  .tituloProducto {
+    display: none;
+  }
+
+  .divTitulo {
+    display: none;
+  }
+
+  .textoProducto h5 {
+    display: block;
+  }
+  .textoContactanos {
+    color: #fff;
+    background-color: #2b0f4900;
+    text-align: center;
+  }
+
+  form {
+    width: 60%;
+  }
+}
