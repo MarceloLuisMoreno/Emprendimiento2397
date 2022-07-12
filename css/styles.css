@@ -3,7 +3,7 @@
 }
 
 h2 {
-  text-align: center !important;
+  text-align: center ;
   margin-bottom: 1.5rem;
 }
 
@@ -308,7 +308,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 50px;
+  height: 2.5rem;
   background: #ecd7fb;
   border-radius: 25px;
   margin-bottom: 2.5rem;
@@ -327,7 +327,7 @@ h2 {
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: clamp(1rem, 3.5vw, 30px);
   color: #000;
   padding-left: 26px;
   top: -15px;
@@ -384,6 +384,10 @@ h2 {
   display: none;
 }
 
+.textoProducto h2 {
+ margin-bottom: 1.5rem;
+}
+
 .imgBuzo {
   margin: 0 !important;
   border-radius: 50px;
@@ -417,11 +421,12 @@ h2 {
   text-align: center;
   margin-top: 10px;
   width: 90%;
-  height: 5vh;
   background: #ecd7fb;
   border-radius: 25px;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
+  text-align: left;
+  padding-left: 26px;
 }
 
 .divTitulo {
@@ -438,19 +443,6 @@ h2 {
 
 /* modal Contacto */
 /******************/
-
-.textoContactanos {
-  font-family: "DM Serif Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: clamp(1rem, 5vw, 30px);
-  line-height: 49px;
-  color: #000000;
-  background-color: #ecd7fb;
-  border-radius: 30px;
-  padding-left: 0.5rem;
-  margin-top: 1rem;
-}
 
 /* Contacto */
 
@@ -549,8 +541,7 @@ textarea {
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 49px;
+  font-size: clamp(1rem, 5vw, 26px);
   text-align: center;
   color: #ffffff;
 }
