@@ -117,7 +117,7 @@ h2 {
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400px;
-  font-size: 24px;
+  font-size: clamp(1.5rem, 5vw, 24px);
   line-height: 33px;
   position: absolute;
   top: 50px;
@@ -138,7 +138,7 @@ h2 {
 .nav-bar p {
   color: #fff;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 }
 
 .nav-bar li img {
@@ -420,7 +420,7 @@ h2 {
   font-size: clamp(1rem, 5vw, 30px);
   text-align: center;
   margin-top: 10px;
-  width: 90%;
+  width: 80%;
   background: #ecd7fb;
   border-radius: 25px;
   margin-bottom: 0.5rem;
@@ -574,8 +574,9 @@ textarea {
 
 .fondoError404 {
   overflow-x: hidden;
-  background: #14041e;
+  background: linear-gradient(180deg, #682259 0%, #3A2363 92.65%, #3C2471 100%);
   color: #ffffff;
+  height: 120vh;
 }
 
 .logo404 {
@@ -703,9 +704,10 @@ textarea {
   .gridNav {
     position: absolute;
     max-width: 500px;
-    width: 85vw;
-    height: 65vh;
+    width: 75vw;
+    height: 100vh;
     z-index: 1;
+    top: 0;
   }
 
   .media1 img {
@@ -724,6 +726,20 @@ textarea {
   }
   .media5 img {
     width: 45vw;
+  }
+
+  .error404 img {
+    width: 100%;
+  }
+
+  .logo404 {
+    position: static;
+  }
+
+  .logoDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -772,6 +788,10 @@ textarea {
     display: none;
   }
 
+  .nav-bar ul {
+    margin-bottom: 6rem;
+  }
+
   .logo {
     position: absolute;
     width: 200px;
@@ -800,10 +820,6 @@ textarea {
       "g h i";
     grid-template-columns: 25vw 25vw 25vw;
     grid-template-rows: auto;
-  }
-
-  .gridNav div {
-    align-items: flex-start;
   }
 
   .media1 {
