@@ -424,23 +424,25 @@
                     <div class="text-end"> <button type="button" class="btn buttonClose" data-bs-dismiss="modal"
                             aria-label="Close">X</button>
                     </div>
-                    <div class="divTitulo">
-                        <p class="tituloProducto">Contactanos</p>
-                    </div>
                     <form class="contacto" name="contacto">
-
+                        <div class="textoContacto">
+                            <!-- le saqué class divTitulo -->
+                            <p class="">Contactanos</p>
+                        </div>
                         <label for="nombre" class="contacto">Nombre</label>
-                        <div> <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+                        <div> <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"
+                                class="form-control" />
                         </div>
                         <label for="email">Correo</label>
-                        <div> <input type="email" name="email" id="email" placeholder="Email" required />
+                        <div> <input type="email" name="email" id="email" placeholder="Email" required
+                                class="form-control" />
                         </div>
                         <p></p>
                         <label for="mensaje">Consulta</label>
-                        <textarea name="mensaje" for="mensaje" placeholder="Escribe tu consulta"
-                            maxlength="600"></textarea>
+                        <textarea name="mensaje" for="mensaje" placeholder="Escribe tu consulta" maxlength="600"
+                            class="form-control"></textarea>
                         <div class="btnEnviar">
-                            <input id="enviarCorreo" type="submit" value="Enviar"></input>
+                            <input id="enviarCorreo" type="submit" class="btn-light" value="Enviar"></input>
                         </div>
                     </form>
                     <br>

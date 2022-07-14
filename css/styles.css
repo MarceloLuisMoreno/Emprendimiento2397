@@ -421,7 +421,7 @@ h2 {
   text-align: center;
   margin-top: 10px;
   width: 80%;
-  background: #ecd7fb;
+  color: #ecd7fb;
   border-radius: 25px;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
@@ -452,6 +452,22 @@ h2 {
   background-size: cover;
 }
 
+.tituloContactanos{
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(1rem, 5vw, 30px);
+  text-align: center;
+  margin-top: 10px;
+  width: 80%;
+  background: #ecd7fb;
+  border-radius: 25px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: left;
+  padding-left: 26px;
+
+}
 .buttonClose {
   background: #9747ff;
   color: #ffffff;
@@ -619,8 +635,9 @@ textarea {
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400px;
-  font-size: 15px;
   line-height: 25px;
+  color: white;
+  font-size: clamp(1rem, 5vw, 30px);
 }
 
 #modalNosotros,
