@@ -280,6 +280,10 @@ h2 {
 /* modal Nosotros */
 /******************/
 .textoNosotros {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: 14vh;
+  margin-right: 14vh;
   padding: 2vh;
   font-family: "DM Serif Display";
   font-style: normal;
@@ -392,6 +396,16 @@ h2 {
   margin: 0 !important;
   border-radius: 50px;
 }
+.modal .modal-dialog { width: 1229px !important;
+height: 865px !important; }
+
+
+.centradoProducto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
 .botonComprar {
   width: 200px;
@@ -407,6 +421,10 @@ h2 {
   list-style-type: none;
   text-decoration: none;
 }
+.botonComprar:hover {
+  color: #f6f6f6;
+  background: #14041e;
+}
 
 .txt-foto {
   display: flex;
@@ -419,13 +437,13 @@ h2 {
   font-weight: 400;
   font-size: clamp(1rem, 5vw, 30px);
   text-align: center;
-  margin-top: 10px;
-  width: 80%;
+/*   margin-top: 10px;
+ */  width: 80%;
   color: #ecd7fb;
   border-radius: 25px;
   margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  text-align: left;
+/*   margin-top: 0.5rem;
+ */  text-align: left;
   padding-left: 26px;
 }
 
