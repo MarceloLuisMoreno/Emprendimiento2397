@@ -55,8 +55,8 @@
                         alt="Icono Instagram">Etiquetanos</a></li>
             <li><a href="https://vm.tiktok.com/ZMNAYpDEb/"><img src="./img/iconoTikTok.png"
                         alt="Icono TikTok">Seguinos</a></li>
-            <li><a href="https://www.facebook.com/103433652435134/posts/103437932434706/?d=n&substory_index=0"><img
-                        src="./img/iconoFacebook.png" alt="Icono Facebook.png">Visitanos</a></li>
+            <li><a href="https://www.facebook.com/2397-hoodies-103433652435134/"><img src="./img/iconoFacebook.png"
+                        alt="Icono Facebook.png">Visitanos</a></li>
 
         </ul>
     </div>
@@ -249,16 +249,16 @@
                 <div class="modal-body">
                     <div id="btnProducto1" class="text-end"> <button type="button" class="btn buttonClose">X</button>
                     </div>
-                    <div class="divTitulo">
+                    <!--                     <div class="divTitulo">
                         <p class="tituloProducto">Naranja: Queen of Owls</p>
                     </div>
+ -->
                     <div class="row g-0 centradoProducto">
                         <div class="col-md-6">
                             <img src="./img/productoBuzo1.png" class="card-img img-fluid imgBuzo" alt="...">
                         </div>
                         <div class="col-md-6">
                             <div class="card-body">
-
                                 <script>
                                     const btnProducto1 = document.getElementById('btnProducto1');
                                     btnProducto1.addEventListener('click', function (e) {
@@ -273,23 +273,20 @@
                                     })
                                 </script>
                                 <div class="txt-foto">
-                                    <div class="textoProducto ">
+                                    <div class="textoProducto">
                                         <h2>Naranja: Queen of Owls</h2>
                                         <p>Buzo oversized unisex, hecho de friza.
                                             Disponible en talles desde el XS hasta el XL .</p>
                                     </div>
-                                    <br>
                                     <div class="cardFotoProducto">
                                         <img src="./img/buzo1-2.png" alt="">
                                         <img src="./img/buzo1-3.png" alt="">
                                         <img src="./img/buzo1-4.png" alt="">
                                     </div>
                                 </div>
-                                <br><br>
-                                <div class="text-center  ">
+                                <div class="text-center  m-5">
                                     <a href="https://ropa2397.mitiendanube.com/productos/hoodie-queen-of-owls/"
                                         class="botonComprar text-center">Comprar</a>
-                                    <br><br><br><br>
                                 </div>
                             </div>
                         </div>
@@ -307,9 +304,10 @@
                 <div class="modal-body">
                     <div id="btnProducto2" class="text-end"> <button type="button" class="btn buttonClose">X</button>
                     </div>
-                    <div class="divTitulo">
+                    <!--                     <div class="divTitulo">
                         <p class="tituloProducto">Violeta: First Man on the Moon</p>
                     </div>
+ -->
                     <div class="row g-0">
                         <div class="col-md-6">
                             <img src="./img/productoBuzo1.png" class="card-img img-fluid mx-0 imgBuzo" alt="...">
@@ -342,10 +340,7 @@
                                         <img src="./img/buzo1-4.png" alt="">
                                     </div>
                                 </div>
-
-
-                                <br>
-                                <div class="text-center  ">
+                                <div class="text-center m-5 ">
                                     <a href="https://ropa2397.mitiendanube.com/productos/hoodie-first-man-on-the-moon/"
                                         class="botonComprar text-center">Comprar</a>
                                 </div>
@@ -364,9 +359,10 @@
                 <div class="modal-body">
                     <div id="btnProducto3" class="text-end"> <button type="button" class="btn buttonClose">X</button>
                     </div>
-                    <div class="divTitulo">
+                    <!--                     <div class="divTitulo">
                         <p class="tituloProducto">Gris: Angels and Devils</p>
                     </div>
+ -->
                     <div class="row g-0">
                         <div class="col-md-6">
                             <img src="./img/productoBuzo1.png" class="card-img img-fluid imgBuzo" alt="...">
@@ -400,9 +396,7 @@
                                         <img src="./img/buzo1-4.png" alt="">
                                     </div>
                                 </div>
-
-                                <br>
-                                <div class="text-center  ">
+                                <div class="text-center m-5 ">
                                     <a href="https://ropa2397.mitiendanube.com/productos/hoodie-angel-devils/"
                                         class="botonComprar text-center">Comprar</a>
                                 </div>
@@ -420,16 +414,16 @@
 
     <!-- Modal Contacto -->
     <div id="modalContact" class="modal fade" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-dialog  modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body fondoLuna">
                     <div class="text-end"> <button type="button" class="btn buttonClose" data-bs-dismiss="modal"
                             aria-label="Close">X</button>
                     </div>
+
                     <form class="contacto" name="contacto">
-                        <div class="textoContacto">
-                            <!-- le saqué class divTitulo -->
-                            <p class="">Contactanos</p>
+                        <div class="divTitulo">
+                            <p class="tituloProducto">Contactanos</p>
                         </div>
                         <label for="nombre" class="contacto">Nombre</label>
                         <div> <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"
@@ -441,8 +435,8 @@
                         </div>
                         <p></p>
                         <label for="mensaje">Consulta</label>
-                        <textarea name="mensaje" for="mensaje" placeholder="Escribe tu consulta" maxlength="600"
-                            class="form-control"></textarea>
+                        <textarea name="mensaje" for="mensaje" placeholder="Escribe tu consulta" class="form-control"
+                            rows="5"></textarea>
                         <div class="btnEnviar">
                             <input id="enviarCorreo" type="submit" class="btn-light" value="Enviar"></input>
                         </div>
