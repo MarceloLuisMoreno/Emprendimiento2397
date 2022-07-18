@@ -277,6 +277,8 @@ h2 {
   background: #14041e;
 }
 
+
+
 /* modal Nosotros */
 /******************/
 .textoNosotros {
@@ -284,7 +286,7 @@ h2 {
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: 400;
-  font-size: clamp(2rem, 5vw, 36px);
+  font-size: clamp(1.5rem, 4vw, 36px);
   line-height: 49px;
   text-align: center;
   color: #ffffff;
@@ -421,19 +423,19 @@ h2 {
   text-align: center;
   margin-top: 10px;
   width: 80%;
-  background: #ecd7fb;
   border-radius: 25px;
   margin-bottom: 0.5rem;
   margin-top: 0.5rem;
   text-align: left;
-  padding-left: 26px;
+  color: white;
 }
 
 .divTitulo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 3rem;
+ 
 }
 
 .card-img {
@@ -922,14 +924,6 @@ textarea {
 @media screen and (min-width: 768px) {
   .txt-foto {
     flex-direction: column;
-  }
-
-  .tituloProducto {
-    display: none;
-  }
-
-  .divTitulo {
-    display: none;
   }
 
   .textoProducto h5 {
