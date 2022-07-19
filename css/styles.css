@@ -105,8 +105,7 @@ h2 {
   font-style: normal;
   color: #ecd7fb;
   text-align: center;
-  font-size: clamp(3rem, 5vw, 6rem);
-  padding-top: 0.5rem;
+  font-size: clamp(3.5rem, 4vw, 6rem);
 }
 
 /* nav-bar */
@@ -257,10 +256,10 @@ h2 {
 
 .iconoFacebook {
   position: absolute;
-  left: 35.52%;
-  right: 56.21%;
-  top: 12.12%;
-  bottom: 15.15%;
+  width: 24px;
+  height: 24px;
+  left: 100px;
+  top: 4px;
 }
 
 .iconoTikTok {
